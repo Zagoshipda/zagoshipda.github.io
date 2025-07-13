@@ -2,19 +2,19 @@
 permalink: /
 title: "Jeon Hyeong Lee"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-hello
+you can check my resume [here](../_data/cv.pdf)
 
-personal website
+References
 ======
 
 
 [Academic Pages](https://github.com/academicpages/academicpages.github.io)
-[GitHub pages](https://pages.github.com/) 
+[GitHub pages](https://pages.github.com/)
 
 
 
