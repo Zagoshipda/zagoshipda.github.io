@@ -8,7 +8,8 @@ BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 # Define file paths
 CV_MARKDOWN="$BASE_DIR/_pages/cv.md"
-CV_JSON="$BASE_DIR/_data/cv.json"
+CV_JSON="$BASE_DIR/_data/cv.pdf"
+# CV_JSON="$BASE_DIR/_data/cv.json"
 CONFIG_FILE="$BASE_DIR/_config.yml"
 
 # Check if the Python script exists
@@ -31,7 +32,7 @@ python3 "$PYTHON_SCRIPT" --input "$CV_MARKDOWN" --output "$CV_JSON" --config "$C
 # Check if the conversion was successful
 if [ $? -eq 0 ]; then
   echo "Successfully updated CV JSON file at $CV_JSON"
-  
+
   # Optional: Build the Jekyll site to see the changes
   echo "Would you like to build the Jekyll site to see the changes? (y/n)"
   read -r answer
